@@ -2,7 +2,7 @@
 
 Progress tracker for Core Java. Mark a topic done by changing `- [ ]` to `- [x]` and commit/push — GitHub will render it as a checked box.
 
-**Progress: 11 / 70 topics done**
+**Progress: 66 / 66 topics done**
 
 ---
 
@@ -22,82 +22,82 @@ Progress tracker for Core Java. Mark a topic done by changing `- [ ]` to `- [x]`
 
 ## 2. Object-Oriented Programming
 
-- [ ] Classes & objects
-- [ ] Constructors (default, parameterized, constructor chaining, `this`)
-- [ ] Encapsulation (getters/setters, access modifiers)
-- [ ] Inheritance (`extends`, `super`)
-- [ ] Polymorphism — method overloading vs overriding
-- [ ] Abstraction — abstract classes vs interfaces
-- [ ] Interfaces (default & static methods, functional interfaces)
-- [ ] `final` keyword (variables, methods, classes)
-- [ ] Packages & access modifiers (`public`, `private`, `protected`, default)
-- [ ] `equals()`, `hashCode()`, `toString()` overriding
-- [ ] Nested, inner, static nested & anonymous classes
-- [ ] Enums
+- [x] Classes & objects
+- [x] Constructors (default, parameterized, constructor chaining, `this`)
+- [x] Encapsulation (getters/setters, access modifiers)
+- [x] Inheritance (`extends`, `super`)
+- [x] Polymorphism — method overloading vs overriding
+- [x] Abstraction — abstract classes vs interfaces
+- [x] Interfaces (default & static methods, functional interfaces)
+- [x] `final` keyword (variables, methods, classes)
+- [x] Packages & access modifiers (`public`, `private`, `protected`, default)
+- [x] `equals()`, `hashCode()`, `toString()` overriding
+- [x] Nested, inner, static nested & anonymous classes
+- [x] Enums
 
 ## 3. Core APIs
 
-- [ ] String, StringBuilder, StringBuffer (immutability, string pool)
-- [ ] Wrapper classes & autoboxing/unboxing
-- [ ] Exception handling (`try/catch/finally`, checked vs unchecked)
-- [ ] Custom exceptions
-- [ ] `try-with-resources`
-- [ ] File I/O (`File`, `FileReader/Writer`, `BufferedReader/Writer`)
-- [ ] Serialization & deserialization
+- [x] String, StringBuilder, StringBuffer (immutability, string pool)
+- [x] Wrapper classes & autoboxing/unboxing
+- [x] Exception handling (`try/catch/finally`, checked vs unchecked)
+- [x] Custom exceptions
+- [x] `try-with-resources`
+- [x] File I/O (`File`, `FileReader/Writer`, `BufferedReader/Writer`)
+- [x] Serialization & deserialization
 
 ## 4. Collections Framework
 
-- [ ] `Collection` hierarchy overview
-- [ ] `List` — `ArrayList`, `LinkedList`
-- [ ] `Set` — `HashSet`, `LinkedHashSet`, `TreeSet`
-- [ ] `Map` — `HashMap`, `LinkedHashMap`, `TreeMap`
-- [ ] `Queue`/`Deque` — `PriorityQueue`, `ArrayDeque`
-- [ ] `Iterator` & `ListIterator`
-- [ ] `Comparable` vs `Comparator`
-- [ ] `Collections` utility class (sort, reverse, synchronizedList, etc.)
+- [x] `Collection` hierarchy overview
+- [x] `List` — `ArrayList`, `LinkedList`
+- [x] `Set` — `HashSet`, `LinkedHashSet`, `TreeSet`
+- [x] `Map` — `HashMap`, `LinkedHashMap`, `TreeMap`
+- [x] `Queue`/`Deque` — `PriorityQueue`, `ArrayDeque`
+- [x] `Iterator` & `ListIterator`
+- [x] `Comparable` vs `Comparator`
+- [x] `Collections` utility class (sort, reverse, synchronizedList, etc.)
 
 ## 5. Generics
 
-- [ ] Generic classes & methods
-- [ ] Bounded type parameters
-- [ ] Wildcards (`?`, `? extends`, `? super`)
+- [x] Generic classes & methods
+- [x] Bounded type parameters
+- [x] Wildcards (`?`, `? extends`, `? super`)
 
 ## 6. Multithreading & Concurrency
 
-- [ ] Thread lifecycle, creating threads (`Thread` vs `Runnable`)
-- [ ] Synchronization (`synchronized`, locks)
-- [ ] `wait()`, `notify()`, `notifyAll()`
-- [ ] `volatile` keyword
-- [ ] Executor framework (`ExecutorService`, thread pools)
-- [ ] `Callable` & `Future`
-- [ ] Concurrent collections (`ConcurrentHashMap`, `CopyOnWriteArrayList`)
+- [x] Thread lifecycle, creating threads (`Thread` vs `Runnable`)
+- [x] Synchronization (`synchronized`, locks)
+- [x] `wait()`, `notify()`, `notifyAll()`
+- [x] `volatile` keyword
+- [x] Executor framework (`ExecutorService`, thread pools)
+- [x] `Callable` & `Future`
+- [x] Concurrent collections (`ConcurrentHashMap`, `CopyOnWriteArrayList`)
 
 ## 7. Java 8+ Features
 
-- [ ] Lambda expressions
-- [ ] Functional interfaces (`Function`, `Predicate`, `Supplier`, `Consumer`)
-- [ ] Streams API (map, filter, reduce, collect)
-- [ ] Method references
-- [ ] `Optional`
-- [ ] Date & Time API (`LocalDate`, `LocalDateTime`, `Duration`)
+- [x] Lambda expressions
+- [x] Functional interfaces (`Function`, `Predicate`, `Supplier`, `Consumer`)
+- [x] Streams API (map, filter, reduce, collect)
+- [x] Method references
+- [x] `Optional`
+- [x] Date & Time API (`LocalDate`, `LocalDateTime`, `Duration`)
 
 ## 8. Advanced Topics
 
-- [ ] Annotations (built-in & custom)
-- [ ] Reflection API
-- [ ] Java Memory Model basics & Garbage Collection
-- [ ] Design patterns (Singleton, Factory, Builder, Observer)
-- [ ] JDBC — connecting to a database, CRUD operations
-- [ ] Basics of Maven/Gradle
-- [ ] Unit testing with JUnit
+- [x] Annotations (built-in & custom)
+- [x] Reflection API
+- [x] Java Memory Model basics & Garbage Collection
+- [x] Design patterns (Singleton, Factory, Builder, Observer)
+- [x] JDBC — connecting to a database, CRUD operations
+- [x] Basics of Maven/Gradle
+- [x] Unit testing with JUnit
 
 ## 9. Practice / Mini Projects
 
-- [ ] Console-based CRUD app
-- [ ] File-based data storage mini-project
-- [ ] Multithreaded mini-project
-- [ ] JDBC-based project (connect to MySQL/Postgres)
-- [ ] REST-ish project practice (optional, pre-Spring warm-up)
+- [x] Console-based CRUD app
+- [x] File-based data storage mini-project
+- [x] Multithreaded mini-project
+- [x] JDBC-based project (connect to MySQL/Postgres)
+- [x] REST-ish project practice (optional, pre-Spring warm-up)
 
 ---
 
