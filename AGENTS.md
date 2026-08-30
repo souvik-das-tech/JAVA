@@ -44,8 +44,13 @@ finished code/notes without the owner engaging with it.
    code component — the `.java` file(s) with the correct file name(s), each
    containing only the question as a comment at the top (no solution). The
    `README.md` contains:
-   - a concise explanation of the concept, and
-   - practice questions / exercises for that topic.
+   - a concise explanation of the concept,
+   - practice questions / exercises for that topic, and
+   - an **"Interview Questions"** subsection: 5-10 questions on this topic as
+     actually asked in Microsoft/MNC Java developer interviews (conceptual
+     "explain X" / "difference between X and Y" / "what happens if" style,
+     not coding problems), **each with its answer included**.
+   - Do **not** add a "Key takeaways / self-check" checklist section — skip it.
 3. The user attempts to answer the questions / write the solution
    **themselves**, directly inside the pre-created `.java` file (under the
    question comment) or in the `README.md`.
@@ -83,11 +88,23 @@ until the user explicitly asks for it.**
   notes, and empty `.java` file (with the question as a comment) to be set
   up, ask.
 
+## Verifying generated solution code
+
+- Whenever the AI writes actual solution code into a `.java` file (per the
+  rule above — i.e. the user explicitly asked for it), it must `javac` and
+  `java` (or otherwise run) that file before considering the task finished,
+  and confirm the output actually matches what the code is supposed to
+  demonstrate.
+- If compilation fails or the output is wrong, fix it and re-verify — don't
+  hand back code that hasn't actually been run.
+- `.class` files produced while verifying are build artifacts, not part of
+  the repo — delete them after verifying (they're also gitignored).
+
 ## Updating progress
 
-- `ROADMAP.md` at the repo root tracks overall progress with checkboxes.
-- When a topic is genuinely finished (notes read + exercises attempted/solved),
-  update `ROADMAP.md`: change that topic's `- [ ]` to `- [x]` and bump the
-  progress count at the top.
-- Do this only when the user says the topic is done — don't mark things done
-  on your own judgment.
+- `README.md` at the repo root tracks overall progress with checkboxes.
+- Whenever a topic is covered in a session (discussed, notes/questions
+  created, or the user works through it), mark that topic done in
+  `README.md`: change its `- [ ]` to `- [x]` and bump the progress count at
+  the top. Do this automatically as part of covering the topic — no need to
+  wait for the user to explicitly say "mark it done".

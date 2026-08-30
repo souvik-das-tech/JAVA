@@ -2,23 +2,23 @@
 
 Progress tracker for Core Java. Mark a topic done by changing `- [ ]` to `- [x]` and commit/push — GitHub will render it as a checked box.
 
-**Progress: 0 / 70 topics done**
+**Progress: 11 / 70 topics done**
 
 ---
 
 ## 1. Basics
 
-- [ ] JDK/JRE/JVM, installing Java, setting up IDE
-- [ ] First program, `main` method, compiling & running
-- [ ] Variables & data types (primitive vs reference)
-- [ ] Type casting & type conversion
-- [ ] Operators (arithmetic, relational, logical, bitwise, assignment, ternary)
-- [ ] Conditional statements (`if`, `else if`, `switch`)
-- [ ] Loops (`for`, `while`, `do-while`, enhanced for)
-- [ ] Arrays (1D, 2D, multi-dimensional)
-- [ ] Input handling (`Scanner`, `BufferedReader`)
-- [ ] Methods (declaration, parameters, return types, overloading)
-- [ ] Variable scope & the `static` keyword
+- [x] JDK/JRE/JVM, installing Java, setting up IDE
+- [x] First program, `main` method, compiling & running
+- [x] Variables & data types (primitive vs reference)
+- [x] Type casting & type conversion
+- [x] Operators (arithmetic, relational, logical, bitwise, assignment, ternary)
+- [x] Conditional statements (`if`, `else if`, `switch`)
+- [x] Loops (`for`, `while`, `do-while`, enhanced for)
+- [x] Arrays (1D, 2D, multi-dimensional)
+- [x] Input handling (`Scanner`, `BufferedReader`)
+- [x] Methods (declaration, parameters, return types, overloading)
+- [x] Variable scope & the `static` keyword
 
 ## 2. Object-Oriented Programming
 

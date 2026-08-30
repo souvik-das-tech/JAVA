@@ -56,10 +56,28 @@ Steps (general):
 2. Point it to the installed JDK (usually auto-detected via `JAVA_HOME`).
 3. Create a new Java project, write a `HelloWorld` class, run it to confirm the toolchain works end-to-end (edit → compile → run).
 
-## Key takeaways / self-check
+## Interview Questions
 
-- [ ] I can explain the difference between JDK, JRE, and JVM in my own words.
-- [ ] Java is installed and `java -version` / `javac -version` both work from the terminal.
-- [ ] `JAVA_HOME` is set correctly.
-- [ ] IDE is installed and configured with the JDK.
-- [ ] I ran a Hello World program successfully through the IDE (and/or terminal with `javac`/`java`).
+**Q: What is the difference between JDK, JRE, and JVM?**
+A: JVM is the engine that executes Java bytecode. JRE is the JVM plus the core libraries needed to *run* Java applications. JDK is the JRE plus development tools (`javac`, `jar`, `javadoc`, debugger) needed to *write and compile* Java code. So JDK ⊃ JRE ⊃ JVM.
+
+**Q: Is JVM platform-independent? What about the bytecode it runs?**
+A: No — the JVM itself is platform-*dependent* (a separate build exists per OS/architecture). What's platform-*independent* is the compiled bytecode (`.class` file): the same bytecode runs on any JVM regardless of OS, which is what gives Java "write once, run anywhere."
+
+**Q: Can you run a Java program without installing the JDK? What's the minimum needed?**
+A: Yes, if you already have a compiled `.class` file — the JRE alone is enough to run it, since running only needs the JVM + core libraries, not the compiler. You need the JDK only to compile `.java` source into bytecode.
+
+**Q: What is JIT (Just-In-Time) compilation and how does it relate to the JVM?**
+A: The JVM normally interprets bytecode instruction-by-instruction. The JIT compiler, part of the execution engine, compiles frequently-executed ("hot") bytecode into native machine code at runtime so subsequent calls run at native speed instead of being re-interpreted each time.
+
+**Q: Why is Java called "write once, run anywhere"? What makes this possible?**
+A: Java source compiles to platform-independent bytecode rather than native machine code. Any machine with a JVM built for its platform can run that same bytecode unmodified, so the same compiled artifact runs on Windows, Linux, macOS, etc. without recompilation.
+
+**Q: What are the main components/architecture of the JVM (class loader, runtime data areas, execution engine)?**
+A: Three broad parts: (1) **Class Loader Subsystem** — loads, links, and initializes `.class` files into memory; (2) **Runtime Data Areas** — memory regions like heap, stack, method area, PC registers, native method stack; (3) **Execution Engine** — interpreter + JIT compiler + garbage collector, which actually executes the bytecode and manages memory.
+
+**Q: If you only have the JRE installed, can you compile a `.java` file? Why or why not?**
+A: No — the JRE deliberately excludes development tools like `javac`. Without the compiler, there's no way to turn `.java` source into bytecode; you'd need the full JDK for that.
+
+**Q: What is the role of `javac` vs `java` commands?**
+A: `javac` is the compiler — it takes `.java` source files and produces `.class` bytecode files. `java` is the launcher — it starts the JVM and runs the bytecode in a given `.class` file (or JAR).
